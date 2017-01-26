@@ -10,5 +10,5 @@ See README files in the individual folders for additional info.
 
 Can't find a template for your favorite game engine here? Make one and submit a pull request.
 
-### Needed Templates
+## Needed Templates
 Everything except Construct 2 and Unity.
