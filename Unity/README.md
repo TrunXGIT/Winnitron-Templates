@@ -3,7 +3,7 @@ Winnitron Unity Template
 
 A bunch of preconfigured input settings and scripts for your Winnitron Unity projects.
 
-This also disables Unity's startup display resolution dialog. (Found at  `Edit > Project Settings > Player > Inspector > Standalone Player Options`
+This also disables Unity's startup display resolution dialog. (Found at  `Edit > Project Settings > Player > Inspector > Standalone Player Options`)
 
 
 ## Inputs
