@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES Controls</name>
+    <events>
+        <comment>Controls based on https://github.com/winnitron/WinnitronLauncher/wiki/Requirements-for-Winnitron-Games</comment>
+        <comment>Quit Game on ESC</comment>
+        <event-block sid="572819395946228">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="372368394334474" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="630897604967963" type="Browser" />
+            </actions>
+        </event-block>
+        <comment></comment>
+        <comment>Up Down Left Right 1 2</comment>
+        <event-group description="" sid="173712668156343" title="Player 1">
+            <sub-events>
+                <event-block sid="368536706549950">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="623279843327971" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="360402777833892" type="Function">
+                            <param id="0" name="Name">&quot;P1_Up&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="496952096158482">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="741093932371808" type="Keyboard">
+                            <param id="0" name="Key">40 (Down arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="293622308978937" type="Function">
+                            <param id="0" name="Name">&quot;P1_Down&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="860121766437241">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="400541224331712" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="363352927780484" type="Function">
+                            <param id="0" name="Name">&quot;P1_Left&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="705463248882343">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="622781395684240" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="882757697738630" type="Function">
+                            <param id="0" name="Name">&quot;P1_Right&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="717227119870061">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="414145463086814" type="Keyboard">
+                            <param id="0" name="Key">190 (.)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="649236705890710" type="Function">
+                            <param id="0" name="Name">&quot;P1_Button1&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="415657238280087">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="132007288411384" type="Keyboard">
+                            <param id="0" name="Key">191 (#)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="827310479720840" type="Function">
+                            <param id="0" name="Name">&quot;P1_Button2&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="857622283871330" title="Player 2">
+            <sub-events>
+                <event-block sid="752616882828846">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="393539401201996" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="459532418157319" type="Function">
+                            <param id="0" name="Name">&quot;P2_Up&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="739356928940884">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="554875668915545" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="446968956593110" type="Function">
+                            <param id="0" name="Name">&quot;P2_Down&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="435584267482147">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="878508429843318" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="718227245996181" type="Function">
+                            <param id="0" name="Name">&quot;P2_Left&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="609747549416021">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="880332016116699" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="732114957524433" type="Function">
+                            <param id="0" name="Name">&quot;P2_Right&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="283276554025631">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="175053597977145" type="Keyboard">
+                            <param id="0" name="Key">192 (ö)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="892207446748297" type="Function">
+                            <param id="0" name="Name">&quot;P2_Button1&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="714320043901140">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="698506552068486" type="Keyboard">
+                            <param id="0" name="Key">49 (1)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="382857536071790" type="Function">
+                            <param id="0" name="Name">&quot;P2_Button2&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="659404074958118" title="Player 3">
+            <sub-events>
+                <event-block sid="841793067439241">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="944096077202644" type="Keyboard">
+                            <param id="0" name="Key">73 (I)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="727959780171516" type="Function">
+                            <param id="0" name="Name">&quot;P3_Up&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="887981238880138">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="797345898087429" type="Keyboard">
+                            <param id="0" name="Key">75 (K)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="307377860231931" type="Function">
+                            <param id="0" name="Name">&quot;P3_Down&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="758765962152706">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="266844090484761" type="Keyboard">
+                            <param id="0" name="Key">74 (J)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="798903352634962" type="Function">
+                            <param id="0" name="Name">&quot;P3_Left&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="522680626150252">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="666171647576049" type="Keyboard">
+                            <param id="0" name="Key">76 (L)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="914658555443839" type="Function">
+                            <param id="0" name="Name">&quot;P3_Right&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="644314145309598">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="661411229153478" type="Keyboard">
+                            <param id="0" name="Key">71 (G)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="386439537131205" type="Function">
+                            <param id="0" name="Name">&quot;P3_Button1&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="492830943838972">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="449286185943590" type="Keyboard">
+                            <param id="0" name="Key">72 (H)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="504056851933974" type="Function">
+                            <param id="0" name="Name">&quot;P3_Button2&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="240325592686401" title="Player 4">
+            <sub-events>
+                <event-block sid="582610631507609">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="746406877878761" type="Keyboard">
+                            <param id="0" name="Key">104 (8 (zehnertastatur))</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="267254670862580" type="Function">
+                            <param id="0" name="Name">&quot;P4_Up&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="112126477201649">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="492547119540411" type="Keyboard">
+                            <param id="0" name="Key">101 (5 (zehnertastatur))</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="909931397155002" type="Function">
+                            <param id="0" name="Name">&quot;P4_Down&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="112683545558308">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="332579020987748" type="Keyboard">
+                            <param id="0" name="Key">100 (4 (zehnertastatur))</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="378885428086584" type="Function">
+                            <param id="0" name="Name">&quot;P4_Left&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="242092450368880">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="625228242322641" type="Keyboard">
+                            <param id="0" name="Key">102 (6 (zehnertastatur))</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="198764690914286" type="Function">
+                            <param id="0" name="Name">&quot;P4_Right&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="412676876539560">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="460785294623424" type="Keyboard">
+                            <param id="0" name="Key">97 (1 (zehnertastatur))</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="823383975027124" type="Function">
+                            <param id="0" name="Name">&quot;P4_Button1&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="423328423473865">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="912728251729233" type="Keyboard">
+                            <param id="0" name="Key">98 (2 (zehnertastatur))</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="972182995800108" type="Function">
+                            <param id="0" name="Name">&quot;P4_Button2&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

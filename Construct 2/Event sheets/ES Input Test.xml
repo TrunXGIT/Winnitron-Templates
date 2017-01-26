@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES Input Test</name>
+    <events>
+        <include>ES Controls</include>
+        <comment>Hide stuff</comment>
+        <event-block sid="302895657928362">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="554418539914562" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="143672416515837" type="Checkmark">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="393999349676542" type="Indicator">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="152957100967482">
+            <conditions>
+                <condition id="7" name="On any key released" sid="929162732731134" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="701833301272106" type="Indicator">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Go fullscreen as soon as you can. It&apos;s only allowed on user input, so..</comment>
+        <event-block sid="364009992419487">
+            <conditions>
+                <condition id="1" name="On any key pressed" sid="731885706122170" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="10" name="Request fullscreen" sid="539849896812788" type="Browser">
+                    <param id="0" name="Mode">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment></comment>
+        <event-block sid="909608960020694">
+            <conditions>
+                <condition id="0" name="On function" sid="560232837631589" type="Function">
+                    <param id="0" name="Name">&quot;P1_Up&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="783644793712006">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="366300393581483" type="Checkmark">
+                            <param id="0" name="Unique ID">34</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="212595036946119" type="Indicator">
+                            <param id="0" name="Unique ID">35</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="438383750651109" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="741522796696167" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="979955136126517">
+            <conditions>
+                <condition id="0" name="On function" sid="689003662282348" type="Function">
+                    <param id="0" name="Name">&quot;P1_Down&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="401071982895593">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="714066947098139" type="Checkmark">
+                            <param id="0" name="Unique ID">36</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="687421319701550" type="Indicator">
+                            <param id="0" name="Unique ID">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="158208478596839" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="928907800301433" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="312045451221393">
+            <conditions>
+                <condition id="0" name="On function" sid="349102386318689" type="Function">
+                    <param id="0" name="Name">&quot;P1_Left&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="502956025142841">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="968987378533901" type="Checkmark">
+                            <param id="0" name="Unique ID">38</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="423361142140036" type="Indicator">
+                            <param id="0" name="Unique ID">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="341225853085808" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="206075691803992" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="450915127997576">
+            <conditions>
+                <condition id="0" name="On function" sid="676138290578513" type="Function">
+                    <param id="0" name="Name">&quot;P1_Right&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="460408223601940">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="519134313843819" type="Checkmark">
+                            <param id="0" name="Unique ID">40</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="753219208352488" type="Indicator">
+                            <param id="0" name="Unique ID">41</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="338177309500180" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="933242619224248" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="819958487973955">
+            <conditions>
+                <condition id="0" name="On function" sid="389212750459400" type="Function">
+                    <param id="0" name="Name">&quot;P1_Button1&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="114954995283305">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="734696251304753" type="Checkmark">
+                            <param id="0" name="Unique ID">42</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="234189909779711" type="Indicator">
+                            <param id="0" name="Unique ID">43</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="538984459492595" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="656747301883996" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="444956126914686">
+            <conditions>
+                <condition id="0" name="On function" sid="735158475622214" type="Function">
+                    <param id="0" name="Name">&quot;P1_Button2&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="480492183335523">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="658408834483159" type="Checkmark">
+                            <param id="0" name="Unique ID">44</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="399815792188102" type="Indicator">
+                            <param id="0" name="Unique ID">45</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="636972770611917" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="520831202565263" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment></comment>
+        <event-block sid="947341405913117">
+            <conditions>
+                <condition id="0" name="On function" sid="427281554727805" type="Function">
+                    <param id="0" name="Name">&quot;P2_Up&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="910682170563732">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="737667501797611" type="Checkmark">
+                            <param id="0" name="Unique ID">18</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="557599621400082" type="Indicator">
+                            <param id="0" name="Unique ID">19</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="767857251147232" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="411566329202691" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="642382716155847">
+            <conditions>
+                <condition id="0" name="On function" sid="947477775421031" type="Function">
+                    <param id="0" name="Name">&quot;P2_Down&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="669905632370593">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="226217151983835" type="Checkmark">
+                            <param id="0" name="Unique ID">20</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="666331679637312" type="Indicator">
+                            <param id="0" name="Unique ID">21</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="659355891379130" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="377184363930429" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="465296145650530">
+            <conditions>
+                <condition id="0" name="On function" sid="553109081399195" type="Function">
+                    <param id="0" name="Name">&quot;P2_Left&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="830376385830189">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="587620962007890" type="Checkmark">
+                            <param id="0" name="Unique ID">22</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="315801336538432" type="Indicator">
+                            <param id="0" name="Unique ID">23</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="636233350597040" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="294975699248031" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="848715239334448">
+            <conditions>
+                <condition id="0" name="On function" sid="818500811917419" type="Function">
+                    <param id="0" name="Name">&quot;P2_Right&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="817684353010153">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="862772602415161" type="Checkmark">
+                            <param id="0" name="Unique ID">24</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="971131862437957" type="Indicator">
+                            <param id="0" name="Unique ID">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="484987450549229" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="449734689255067" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="990904082778063">
+            <conditions>
+                <condition id="0" name="On function" sid="691903276863177" type="Function">
+                    <param id="0" name="Name">&quot;P2_Button1&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="852266235611370">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="991424336769839" type="Checkmark">
+                            <param id="0" name="Unique ID">26</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="977788124387351" type="Indicator">
+                            <param id="0" name="Unique ID">27</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="217339098324132" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="570415854579863" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="726828990456669">
+            <conditions>
+                <condition id="0" name="On function" sid="966534159728899" type="Function">
+                    <param id="0" name="Name">&quot;P2_Button2&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="503694993272980">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="240348090438957" type="Checkmark">
+                            <param id="0" name="Unique ID">28</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="522537846517917" type="Indicator">
+                            <param id="0" name="Unique ID">29</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="782451067908572" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="207828213909602" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment></comment>
+        <event-block sid="459368457785607">
+            <conditions>
+                <condition id="0" name="On function" sid="227972132487608" type="Function">
+                    <param id="0" name="Name">&quot;P3_Up&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="261822426723823">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="521535961235602" type="Checkmark">
+                            <param id="0" name="Unique ID">70</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="543693698489639" type="Indicator">
+                            <param id="0" name="Unique ID">71</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="194989795636759" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="825969245177652" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="270616697963894">
+            <conditions>
+                <condition id="0" name="On function" sid="389526095562913" type="Function">
+                    <param id="0" name="Name">&quot;P3_Down&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="816993504228549">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="369093001841072" type="Checkmark">
+                            <param id="0" name="Unique ID">72</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="156567616097256" type="Indicator">
+                            <param id="0" name="Unique ID">73</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="846619025467982" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="291065428340660" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="457660414313745">
+            <conditions>
+                <condition id="0" name="On function" sid="536783446257604" type="Function">
+                    <param id="0" name="Name">&quot;P3_Left&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="300357228969131">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="872814472805777" type="Checkmark">
+                            <param id="0" name="Unique ID">74</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="924190226272400" type="Indicator">
+                            <param id="0" name="Unique ID">75</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="676208962528054" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="368938631098169" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="667051884900517">
+            <conditions>
+                <condition id="0" name="On function" sid="330261210085135" type="Function">
+                    <param id="0" name="Name">&quot;P3_Right&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="441360627981338">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="859565844595239" type="Checkmark">
+                            <param id="0" name="Unique ID">76</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="866570521276671" type="Indicator">
+                            <param id="0" name="Unique ID">77</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="789645744965525" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="515695870830287" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="790318363511575">
+            <conditions>
+                <condition id="0" name="On function" sid="570439401388846" type="Function">
+                    <param id="0" name="Name">&quot;P3_Button1&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="876652313624216">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="102701890851108" type="Checkmark">
+                            <param id="0" name="Unique ID">78</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="623060650534221" type="Indicator">
+                            <param id="0" name="Unique ID">79</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="800553608186236" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="226333636372508" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="650834448845263">
+            <conditions>
+                <condition id="0" name="On function" sid="529897019825812" type="Function">
+                    <param id="0" name="Name">&quot;P3_Button2&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="174682651121154">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="192398622869440" type="Checkmark">
+                            <param id="0" name="Unique ID">80</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="104463198502692" type="Indicator">
+                            <param id="0" name="Unique ID">81</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="484481183995875" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="607492934435196" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment></comment>
+        <event-block sid="198611792860498">
+            <conditions>
+                <condition id="0" name="On function" sid="337123344062959" type="Function">
+                    <param id="0" name="Name">&quot;P4_Up&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="875956599037912">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="296166624069327" type="Checkmark">
+                            <param id="0" name="Unique ID">52</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="507390580214358" type="Indicator">
+                            <param id="0" name="Unique ID">53</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="186293195866592" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="793711531701073" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="888481007874927">
+            <conditions>
+                <condition id="0" name="On function" sid="793776563503944" type="Function">
+                    <param id="0" name="Name">&quot;P4_Down&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="227441973737451">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="528681222330868" type="Checkmark">
+                            <param id="0" name="Unique ID">54</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="388483392405486" type="Indicator">
+                            <param id="0" name="Unique ID">55</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="616970347125031" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="787506285489572" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="932205098241695">
+            <conditions>
+                <condition id="0" name="On function" sid="537785662625986" type="Function">
+                    <param id="0" name="Name">&quot;P4_Left&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="414777934309367">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="801986690923697" type="Checkmark">
+                            <param id="0" name="Unique ID">56</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="752280282809615" type="Indicator">
+                            <param id="0" name="Unique ID">57</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="717654946101406" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="295436788341043" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="432746421244612">
+            <conditions>
+                <condition id="0" name="On function" sid="837598474581067" type="Function">
+                    <param id="0" name="Name">&quot;P4_Right&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="366665643990407">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="702436840474100" type="Checkmark">
+                            <param id="0" name="Unique ID">58</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="834962803804056" type="Indicator">
+                            <param id="0" name="Unique ID">59</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="618396286257353" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="839812710584303" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="467016075126252">
+            <conditions>
+                <condition id="0" name="On function" sid="473002575779935" type="Function">
+                    <param id="0" name="Name">&quot;P4_Button1&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="564136600632335">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="950862344770337" type="Checkmark">
+                            <param id="0" name="Unique ID">60</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="602188712911817" type="Indicator">
+                            <param id="0" name="Unique ID">61</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="671427126732941" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="249257817454052" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="135661252959024">
+            <conditions>
+                <condition id="0" name="On function" sid="723393519703275" type="Function">
+                    <param id="0" name="Name">&quot;P4_Button2&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="228795180226668">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="547332275849349" type="Checkmark">
+                            <param id="0" name="Unique ID">62</param>
+                        </condition>
+                        <condition id="-14" name="Pick by unique ID" sid="400518559499242" type="Indicator">
+                            <param id="0" name="Unique ID">63</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="598632290298133" type="Checkmark">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="895834134036145" type="Indicator">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
