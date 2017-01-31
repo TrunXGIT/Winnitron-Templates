@@ -11,4 +11,14 @@ See README files in the individual folders for additional info.
 Can't find a template for your favorite game engine here? Make one and submit a pull request.
 
 ## Needed Templates
-Everything except Construct 2 and Unity.
+
+We are looking for contributions for:
+
+* Game Maker: Studio
+* Unreal Engine
+* Godot
+* Stencyl
+* LÖVE
+* etc
+
+Basically anything that can target Windows desktop.
