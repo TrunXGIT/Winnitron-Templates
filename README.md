@@ -21,4 +21,4 @@ We are looking for contributions for:
 * LÖVE
 * etc
 
-Basically anything that can target Windows desktop.
+Right now the Winnitron Launcher can run anything as long as it is a Windows executable file, so we're looking for any engine that can target Windows desktop.
